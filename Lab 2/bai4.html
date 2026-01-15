@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bài 4 - Lab 2</title>
+</head>
+<body class="p-4 bg-secondary">
+    <div class="container bg-white p-3 rounded shadow">
+        <h3>Bài tập ứng dụng Modal cho Tài khoản</h3>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Tài khoản
+        </button>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">ĐĂNG NHẬP / ĐĂNG KÝ</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#m-dk">Đăng ký</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#m-dn">Đăng nhập</a></li>
+                    </ul>
+                    <div class="tab-content mt-3">
+                        <div id="m-dk" class="tab-pane active">
+                            <input type="text" class="form-control mb-2" placeholder="Họ tên">
+                            <button class="btn btn-primary">Đăng Ký</button>
+                        </div>
+                        <div id="m-dn" class="tab-pane fade">
+                            <input type="email" class="form-control mb-2" placeholder="Email">
+                            <input type="password" class="form-control mb-2" placeholder="Mật khẩu">
+                            <button class="btn btn-primary">Đăng Nhập</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
