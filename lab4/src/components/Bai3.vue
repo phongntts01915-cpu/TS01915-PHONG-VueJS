@@ -1,9 +1,14 @@
 <template>
-  <h1>{{ greeting }}</h1>
-
-  <button v-bind:title="buttonTitle" @click="changeGreeting">
-    Click để thay đổi
-  </button>
+  <div class="text-center">
+    <h1 class="mb-3 text-danger">{{ greeting }}</h1>
+    <button 
+      class="btn btn-primary" 
+      v-bind:title="buttonTitle" 
+      @click="changeGreeting"
+    >
+      Click để thay đổi
+    </button>
+  </div>
 </template>
 
 <script>
